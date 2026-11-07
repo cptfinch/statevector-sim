@@ -18,16 +18,17 @@ print(state.sample(1000))                    # about {'00': 500, '11': 500}
 Run the tests: `uv run --with pytest --with numpy python -m pytest`
 
 ## The linear algebra, in my words
-<!-- TODO (write this yourself, in your own words; this is the part that matters):
+*In progress: this section is being written by hand.* It will cover:
+
 1. Why a qubit state is a vector, and what the two amplitudes mean.
 2. Why gates are matrices, and why they must be unitary (what unitary preserves).
 3. Why two qubits need a tensor (Kronecker) product, and why 2 qubits means 4 amplitudes.
 4. Why entanglement (the Bell state) cannot be written as a product of two single-qubit states.
 5. Why simulating n qubits costs memory that doubles with every extra qubit.
--->
+
 
 ## How this was built
-<!-- TODO (decide and state honestly): written with AI assistance (Claude) and reviewed and understood by me line by line. -->
+Written with AI assistance (Claude Code). The gate-as-tensor-contraction approach and the tests are documented in the code.
 
 ## Limitations
 Dense state vectors only (memory doubles per qubit), no noise model, no circuit optimiser, and no mid-circuit measurement or classical control.
